@@ -1,3 +1,4 @@
+import Ender from "./footer/Ender";
 import NavBar from "./header/NavBar";
 function ScrollSpy() {
   return (
@@ -36,6 +37,7 @@ function ScrollSpy() {
       <br></br>
       <br></br>
       <br></br>
+      <Ender/>
 
 
     </>
