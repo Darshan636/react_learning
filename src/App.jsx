@@ -3,18 +3,32 @@
 
 import Ender from "./footer/Ender"
 import NavBar from "./header/NavBar"
+import Marquee from "./Marquee"
 import ScrollSpy from "./ScrollSpy "
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
-  
+
 
   return (
     <> {/* react fragment */}
-    <NavBar/>
-    <ScrollSpy/>
-    <Ender/>
+      {/* <Marquee /> */}
+      {/* <NavBar /> */}
+      {/* <ScrollSpy /> */}
+      {/* <Ender /> */}
+      
 
-  {/* <div style={{backgroundColor: 'white', padding: 30, borderRadius: 8, margin: '100px 100px 15% 15%', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)', width: 300, textAlign: 'center'}}>
+      <div>
+        <BrowserRouter>
+          <Routes>
+              <Route path='/' element={<NavBar/>} />
+              <Route path='/scrollSpy' element={<ScrollSpy/>} />
+              <Route path='/marquee' element={<Marquee/>} />
+          </Routes>
+        </BrowserRouter>
+      </div>
+
+      {/* <div style={{backgroundColor: 'white', padding: 30, borderRadius: 8, margin: '100px 100px 15% 15%', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)', width: 300, textAlign: 'center'}}>
   <h2 style={{marginBottom: 20, fontSize: 24, color: '#333'}}>Login</h2>
   <form action="#" method="POST">
     <div style={{marginBottom: 15}}>
