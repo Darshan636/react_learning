@@ -23,7 +23,7 @@ function App() {
           <Routes>
               <Route path='/' element={<NavBar/>} />
               <Route path='/scrollSpy' element={<ScrollSpy/>} />
-              <Route path='/marquee' element={<Marquee/>} />
+              <Route path='/marquee' element={<Marquee msg="Hi, This is admin"/>} />
           </Routes>
         </BrowserRouter>
       </div>

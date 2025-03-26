@@ -1,10 +1,10 @@
 import NavBar from "./header/NavBar";
 
-function Marquee(){
+function Marquee({msg}){
     return(
     <>
     <NavBar/>
-        <marquee><h1>Welcom To My webpage</h1></marquee>
+        <marquee style={{fontSize: '50px'}}>{msg}</marquee>
     </>
     )
 }
